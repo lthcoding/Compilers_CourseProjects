@@ -1,0 +1,18 @@
+error0 : Missing #
+Lexical analysis failed!  4 errors found.
+<KEYWORD, 4>
+<KEYWORD, 0>
+<SEPARATOR, 2>
+<SEPARATOR, 3>
+<SEPARATOR, 4>
+<KEYWORD, 4>
+<ERROR, 0b_a : invalid  constant or identifier>
+<ASSIGNMENT, 0>
+<CONST(int), 0>
+<SEPARATOR, 1>
+<KEYWORD, 4>
+<IDENTIFIER, 0>
+<ERROR, '*& : invalid character>
+<SEPARATOR, 1>
+<SEPARATOR, 5>
+<ERROR, /* not ending comment : mult-line comment missing ending>

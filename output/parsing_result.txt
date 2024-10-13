@@ -1,0 +1,145 @@
+Parsing succeded!
+[Program] : {
+	[Assignment, <IDENTIFIER, 0>] : {
+		[Type, <KEYWORD, 4>] : { }
+		[Assignment, <ASSIGNMENT, 0>] : { }
+		[Arithmetic Expr ] : {
+			[Arithmetic Expr ] : {
+				[Operand, <CONST(float), 0>] : { }
+			}
+		}
+	}
+	[Function, <IDENTIFIER, 1>] : {
+		[Type, <KEYWORD, 9>] : { }
+		[Argument, ] : {
+			[Argument, <IDENTIFIER, 2>] : {
+				[Type, <KEYWORD, 4>] : { }
+			}
+			[Argument, <IDENTIFIER, 3>] : {
+				[Type, <KEYWORD, 4>] : { }
+			}
+		}
+		[While] : {
+			[Logical Expr ] : {
+				[Logical Expr ] : {
+					[Logical Expr <OPRATOR, 8>] : {
+						[Operand, <IDENTIFIER, 2>] : { }
+						[Operand, <IDENTIFIER, 3>] : { }
+					}
+				}
+			}
+			[Assignment, <IDENTIFIER, 2>] : {
+				[Type, <KEYWORD, 4>] : { }
+				[Assignment, <ASSIGNMENT, 0>] : { }
+				[Arithmetic Expr ] : {
+					[Arithmetic Expr <OPRATOR, 0>] : {
+						[Arithmetic Expr <OPRATOR, 0>] : {
+							[Arithmetic Expr ] : {
+								[Operand, <IDENTIFIER, 2>] : { }
+							}
+							[Arithmetic Expr ] : {
+								[Operand, <CONST(int), 1>] : { }
+							}
+						}
+						[Arithmetic Expr ] : {
+							[Operand, <IDENTIFIER, 3>] : { }
+						}
+					}
+				}
+			}
+			[Assignment, <IDENTIFIER, 3>] : {
+				[Type, <KEYWORD, 4>] : { }
+				[Assignment, <ASSIGNMENT, 0>] : { }
+				[Arithmetic Expr ] : {
+					[Arithmetic Expr <OPRATOR, 1>] : {
+						[Arithmetic Expr ] : {
+							[Arithmetic Expr <OPRATOR, 2>] : {
+								[Arithmetic Expr ] : {
+									[Arithmetic Expr ] : {
+										[Arithmetic Expr <OPRATOR, 0>] : {
+											[Arithmetic Expr ] : {
+												[Operand, <IDENTIFIER, 3>] : { }
+											}
+											[Arithmetic Expr ] : {
+												[Operand, <CONST(int), 2>] : { }
+											}
+										}
+									}
+								}
+								[Operand, <CONST(int), 1>] : { }
+							}
+						}
+						[Arithmetic Expr ] : {
+							[Operand, <CONST(int), 3>] : { }
+						}
+					}
+				}
+			}
+		}
+		[Return] : {
+			[Arithmetic Expr ] : {
+				[Arithmetic Expr ] : {
+					[Operand, <CONST(int), 4>] : { }
+				}
+			}
+		}
+	}
+	[Function, <KEYWORD, 0>] : {
+		[Type, <KEYWORD, 4>] : { }
+		[Argument, ] : { }
+		[If] : {
+			[Logical Expr ] : {
+				[Logical Expr ] : {
+					[Logical Expr <OPRATOR, 11>] : {
+						[Operand, <IDENTIFIER, 0>] : { }
+						[Operand, <CONST(int), 4>] : { }
+					}
+				}
+			}
+			[Assignment, <IDENTIFIER, 4>] : {
+				[Type, <KEYWORD, 4>] : { }
+				[Assignment, <ASSIGNMENT, 0>] : { }
+				[Logical Expr ] : {
+					[Logical Expr ] : {
+						[Logical Expr <OPRATOR, 11>] : {
+							[Operand, <IDENTIFIER, 5>] : { }
+							[Operand, <CONST(int), 2>] : { }
+						}
+					}
+				}
+			}
+			[Assignment, <IDENTIFIER, 5>] : {
+				[Type, <KEYWORD, 4>] : { }
+				[Assignment, <ASSIGNMENT, 0>] : { }
+				[Logical Expr ] : {
+					[Logical Expr <OPRATOR, 5>] : {
+						[Logical Expr ] : {
+							[Logical Expr <OPRATOR, 4>] : {
+								[Logical Expr ] : {
+									[Logical Expr <OPRATOR, 6>] : {
+										[Logical Expr ] : {
+											[Operand, <IDENTIFIER, 4>] : { }
+										}
+										[Logical Expr ] : {
+											[Operand, <IDENTIFIER, 5>] : { }
+										}
+									}
+								}
+							}
+						}
+						[Logical Expr ] : {
+							[Operand, <IDENTIFIER, 5>] : { }
+						}
+					}
+				}
+			}
+		}
+		[Return] : {
+			[Arithmetic Expr ] : {
+				[Arithmetic Expr ] : {
+					[Operand, <CONST(int), 4>] : { }
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,40 @@
+
+[Operand] ::= <IDENTIFIER> | <CONST>
+
+// need Recursive
+[Arithmetic] ::= [A_0]<OPRATOR, 0>[A_0] | [A_0]<OPRATOR, 1>[A_0] | [A_0]     // +-
+[A_0] ::= [A_1]<OPRATOR, 2>[A_1] | [A_1]<OPRATOR, 3>[A_1] | [A_1]     // */
+[A_1] ::= <SEPARATOR, 2>[Arithmetic]<SEPARATOR, 3> | [Operand]     // ()
+
+// need Recursive
+[Logical] ::= [L_0]<OPRATOR, 6>[L_0] | [L_0]     // || 
+[L_0] ::= [L_1]<OPRATOR, 5>[L_1] | [L_1]     // &&
+// > < >= <= == !=
+[L_1] ::= [L_2]<OPRATOR, 7>[L_2] | [L_2]<OPRATOR, 8>[L_2] | [L_2]<OPRATOR, 9>[L_2] | [L_2]<OPRATOR, 10>[L_2] | [L_2]<OPRATOR, 11>[L_2] | [L_2]<OPRATOR, 12>[L_2] | [L_2]
+[L_2] ::= <SEPARATOR, 2>[Logical]<SEPARATOR, 3> | <OPRATOR, 4> | [Operand]   // () !
+
+[Expression] ::= [Arithmetic] | [Logical]
+
+[Assign] ::= [Type]<IDENTIFIER>[AssignOp][Expression]<SEPARATOR, 1> || <IDENTIFIER>[AssignOp][Expression]<SEPARATOR, 1>
+[Type] ::= <KEYWORD, 4> || <KEYWORD, 5> || <KEYWORD, 6> || <KEYWORD, 7> || <KEYWORD, 8> || <KEYWORD, 9> || <KEYWORD, 10>
+[AssignOp] ::= <ASSIGNMENT, 0> || <ASSIGNMENT, 1> || <ASSIGNMENT, 2> || <ASSIGNMENT, 3> || <ASSIGNMENT, 4>
+
+//need outer Recursive
+[Statement] ::= [Assign] | [if] | [While] 
+
+[If] ::=  <KEYWORD, 1><SEPARATOR, 2>[Logical]<SEPARATOR, 3><SEPARATOR, 4>[Statement]<SEPARATOR, 5><KEYWORD, 2><SEPARATOR, 4>[Statement]<SEPARATOR, 5>
+
+[While] ::= <KEYWORD, 3><SEPARATOR, 2>[Logical]<SEPARATOR, 3><SEPARATOR, 4>[Statement]<SEPARATOR, 5>
+
+[Function] ::= [Type]<IDENTIFIER><SEPARATOR, 2>[Argument]<SEPARATOR, 3><SEPARATOR, 4>[Statement][Return]<SEPARATOR, 5>
+
+
+//need Recursive
+[Argument] ::= [Argu_0]{<SEPARATOR, 1>[Argu_0]}
+[Argu_0] ::= [Type]<IDENTIFIER>
+
+[Return] ::= <KEYWORD, 11>[Expression]<SEPARATOR, 1>
+
+[Program] ::= {[Assign] | [Function]}[Main]{[Assign] | [Function]}
+
+[Main] ::= [Function-Main]

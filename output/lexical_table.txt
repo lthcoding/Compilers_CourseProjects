@@ -1,0 +1,57 @@
+Identifier Table
+0	k
+
+
+Constant Table
+0	3
+
+
+Comment Table
+
+
+Keyword Table
+0	main
+1	if
+2	else
+3	while
+4	int
+5	long
+6	short
+7	float
+8	double
+9	bool
+10	char
+11	return
+
+
+Operator Table
+0	+
+1	-
+2	*
+3	/
+4	!
+5	&&
+6	||
+7	>
+8	<
+9	>=
+10	<=
+11	==
+12	!=
+
+
+Separator Table
+0	,
+1	;
+2	(
+3	)
+4	{
+5	}
+
+
+Assignment Table
+0	=
+1	+=
+2	-=
+3	*=
+4	/=

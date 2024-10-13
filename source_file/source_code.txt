@@ -1,0 +1,25 @@
+// abc
+
+int a = 4.123;
+
+/* multi-line
+comment
+test */
+
+bool func (int k, int z){
+	while(k < z){
+		int k = k + 2 + z;
+		int z = (z+1)*2-3;
+	}
+	return 0;
+}
+
+int main(){
+	if(a==0){
+		int b = c == 1;
+	}
+	else{
+		int c = !(b||c)&&c;
+	}
+	return 0;
+}#

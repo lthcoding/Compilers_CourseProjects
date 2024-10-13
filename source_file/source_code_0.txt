@@ -1,0 +1,5 @@
+int main(){
+	int 0b_a = 3;
+	int k '*& ;
+}
+/* not ending comment
